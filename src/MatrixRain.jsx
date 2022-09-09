@@ -73,7 +73,6 @@ const RainStream = props => {
 		} else {
 			setTopPadding(topPadding + 44);
 		}
-		// setStream(stream => [...stream.slice(1, stream.length), getRandChar()]);
 		setStream(getMutatedStream);
 	}, intervalDelay);
 

@@ -1,8 +1,8 @@
-import './App.css';
-import MatrixRain from './MatrixRain';
+import './App.css'
+import MatrixRain from './MatrixRain'
 
 function App() {
-	return <MatrixRain />;
+	return <MatrixRain />
 }
 
-export default App;
+export default App
