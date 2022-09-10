@@ -1,4 +1,5 @@
 @font-face {
 	font-family: matrixFont;
+  font-display: swap;
 	src: url(./matrixFont.woff2);
 }
