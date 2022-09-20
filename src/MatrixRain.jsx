@@ -80,7 +80,7 @@ const RainStream = props => {
 		<div
       id="matrixrain-column"
 			style={{
-				fontFamily: 'matrixFont',
+				fontFamily: 'matrixCode',
 				writingMode: 'vertical-rl',
 				textOrientation: 'upright',
 				userSelect: 'none',
