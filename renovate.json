@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["base:config"],
+  "extends": ["config:base"],
   "semanticCommitScope": "deps",
   "automergeType": "pr",
   "includeForks": true,
