@@ -44,10 +44,4 @@ jobs:
         run: pnpm install
       
       - name: Build project  
-        run: pnpm build
-      
-      - name: Lighthouse
-        run: lhci autorun
-        
-  # lighthouseci:
-    
+        run: pnpm build    
