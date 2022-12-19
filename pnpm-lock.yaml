@@ -17,7 +17,7 @@ specifiers:
   css-loader: ^6.7.2
   css-minimizer-webpack-plugin: ^4.2.2
   dotenv: ^16.0.3
-  dotenv-expand: ^9.0.0
+  dotenv-expand: ^10.0.0
   eslint: ^8.28.0
   eslint-config-react-app: ^7.0.1
   eslint-webpack-plugin: ^3.2.0
@@ -67,7 +67,7 @@ dependencies:
   css-loader: 6.7.2_webpack@5.75.0
   css-minimizer-webpack-plugin: 4.2.2_webpack@5.75.0
   dotenv: 16.0.3
-  dotenv-expand: 9.0.0
+  dotenv-expand: 10.0.0
   eslint: 8.28.0
   eslint-config-react-app: 7.0.1_yuadj64euken3fseqsgyhvbqke
   eslint-webpack-plugin: 3.2.0_7sokg6jdhc7gt7j6ytnga4ro6y
@@ -3979,8 +3979,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /dotenv-expand/9.0.0:
-    resolution: {integrity: sha512-uW8Hrhp5ammm9x7kBLR6jDfujgaDarNA02tprvZdyrJ7MpdzD1KyrIHG4l+YoC2fJ2UcdFdNWNWIjt+sexBHJw==}
+  /dotenv-expand/10.0.0:
+    resolution: {integrity: sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==}
     engines: {node: '>=12'}
     dev: false
 
