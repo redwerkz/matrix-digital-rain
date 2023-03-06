@@ -13,9 +13,10 @@ const MAX_INTERVAL_DELAY = 100
 const MIN_DELAY_BETWEEN_STREAMS = 0
 const MAX_DELAY_BETWEEN_STREAMS = 8000
 
-const getRandInRange = (min, max) => Math.floor(Math.random() * (max - min)) + min
+const range = (min, max) => Array.from({ length: max - min }, (_, i) => i + min);
+const getRandInRange = (min, max) => range(min, max)[Math.floor(Math.random() * (max - min))];
 
-const getRandChar = () => VALID_CHARS.charAt(Math.floor(Math.random() * VALID_CHARS.length))
+const getRandChar = () => VALID_CHARS[Math.floor(Math.random() * VALID_CHARS.length)];
 
 const getRandStream = () => new Array(getRandInRange(MIN_STREAM_SIZE, MAX_STREAM_SIZE)).fill('').map((_) => getRandChar())
 
@@ -47,9 +48,7 @@ const RainStream = ({ color, height }) => {
   }, [])
 
   useInterval(() => {
-    if (!height) return
-
-    if (!intervalDelay) return
+    if (!height || !intervalDelay) return
 
     // If stream is off the screen, reset it after timeout
     if (topPadding > height) {
@@ -72,15 +71,15 @@ const RainStream = ({ color, height }) => {
     <div
       id='matrixrain-column'
       style={{
-        color: '#20c20e',
+        color: '#00ff41',
         fontFamily: 'matrixCode',
         writingMode: 'vertical-rl',
         textOrientation: 'upright',
         userSelect: 'none',
         whiteSpace: 'nowrap',
         marginTop: topPadding,
-        marginLeft: -15,
-        marginRight: -15,
+        marginLeft: -10,
+        marginRight: -10,
         textShadow: '0px 0px 8px rgba(32, 194, 14, 0.8)',
         fontSize: 50,
       }}
@@ -114,7 +113,7 @@ const MatrixRain = (props) => {
     })
   }, [])
 
-  const streamCount = containerSize ? Math.floor(containerSize.width / 26) : 0
+  const streamCount = containerSize ? Math.floor(containerSize.width / 30) : 0
 
   return (
     <div
