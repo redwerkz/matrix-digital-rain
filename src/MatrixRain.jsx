@@ -10,7 +10,7 @@ const MAX_STREAM_SIZE = 50
 const MIN_INTERVAL_DELAY = 50
 const MAX_INTERVAL_DELAY = 100
 
-const MIN_DELAY_BETWEEN_STREAMS = 0
+const MIN_DELAY_BETWEEN_STREAMS = 100
 const MAX_DELAY_BETWEEN_STREAMS = 8000
 
 const range = (min, max) => Array.from({ length: max - min }, (_, i) => i + min);
@@ -80,7 +80,7 @@ const RainStream = ({ color, height }) => {
         marginTop: topPadding,
         marginLeft: -10,
         marginRight: -10,
-        textShadow: '0px 0px 8px rgba(32, 194, 14, 0.8)',
+        textShadow: '0px 0px 10px rgba(32, 194, 14, 0.8)',
         fontSize: 50,
       }}
     >
@@ -91,7 +91,7 @@ const RainStream = ({ color, height }) => {
             // Reduce opacity for last chars
             opacity: index < 6 ? 0.1 + index * 0.15 : 1,
             color: index === stream.length - 1 ? '#fff' : undefined,
-            textShadow: index === stream.length - 1 ? '0px 0px 20px rgba(255, 255, 255, 1)' : undefined,
+            textShadow: index === stream.length - 1 ? '0 0 10px rgba(255, 255, 255, 1),0 -15px 20px rgba(0, 255, 255, 1)' : undefined,
           }}
         >
           {char}
