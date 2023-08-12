@@ -23,7 +23,7 @@ jobs:
           version: 7
           run_install: |
             - recursive: true
-              args: [--frozen-lockfile, --strict-peer-dependencies]
+              args: [--strict-peer-dependencies]
             - args: [--global, lhci/cli@0.9.x]
 
       - name: Get pnpm store directory
