@@ -9,7 +9,7 @@
     "@emotion/css": "^11.10.6",
     "@emotion/react": "^11.10.6",
     "@testing-library/dom": "^9.0.0",
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@use-it/interval": "^1.0.0",
